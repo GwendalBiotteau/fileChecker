@@ -31,7 +31,13 @@ root.withdraw()
 
 # dir = str(input("Enter the path to the folder you want to analyze: "))
 dir = filedialog.askdirectory()
-percent = int(input("Enter the % of similarity for the file names detection:"))
+correct = False
+while correct == False:
+    percent = int(input("Enter the % of similarity for the file names detection:"))
+    if percent < 1 or percent > 100:
+        print ('Invalid percentage...')
+    else: correct = True
+
 list = os.listdir(dir)
 for i in list:
     for i2 in list:

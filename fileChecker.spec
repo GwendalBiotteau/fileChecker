@@ -5,7 +5,7 @@ block_cipher = None
 
 
 a = Analysis(['fileChecker.py'],
-             pathex=['C:\\Work\\Python'],
+             pathex=['C:\\Work\\Python\\fileChecker'],
              binaries=[],
              datas=[],
              hiddenimports=[],
